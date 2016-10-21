@@ -1,0 +1,5 @@
+--- # Ansible Role [Composer]: tasks.main (Axel Pardemann <axelitus@GitHub>)
+- name: Include OS specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- include: "{{ ansible_distribution }}/install_composer.yml"

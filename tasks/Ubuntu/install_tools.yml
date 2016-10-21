@@ -1,0 +1,6 @@
+--- # Ansible Role [Composer]: tasks.ubuntu.install_composer (Axel Pardemann <axelitus@GitHub>)
+- name: Install Composer package
+  apt:
+    name: "composer"
+    state: "latest"
+  register: composer_install
