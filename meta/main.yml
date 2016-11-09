@@ -2,7 +2,9 @@
 galaxy_info:
   author: "Axel Pardemann"
   company: "axelitusMX"
+  description: "Composer Package Manager"
   license: "MIT"
+  min_ansible_version: 2.1
   platforms:
     - name: Ubuntu
       versions:
@@ -10,4 +12,6 @@ galaxy_info:
   galaxy_tags:
     - php
     - composer
-  dependencies: []
+  dependencies: [
+    "axelitus/php"
+  ]
